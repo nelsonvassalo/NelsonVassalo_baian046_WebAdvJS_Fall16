@@ -1,0 +1,35 @@
+.img {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	overflow: hidden
+}
+
+.img img {
+	position: relative;
+	z-index: 1;
+	top: 0;
+	left: 0
+}
+
+.img iframe {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+}
+
+h1 {
+	font-family: "Comic Sans", sans-serif;
+	color: #F200F6;
+	text-shadow: 5px 5px 2px blue, 10px 10px 10px blue, 15px 15px 25px blue;
+	position: fixed;
+	z-index: 51;
+	margin-left: -293.5px;
+	margin-top: -48.5px;
+	top: 50%;
+	left: 50%;
+	font-weight: bold;
+	letter-spacing: -0.03px;
+	font-size: 82px;
+}
