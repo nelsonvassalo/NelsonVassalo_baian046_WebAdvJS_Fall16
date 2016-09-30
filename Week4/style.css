@@ -1,0 +1,210 @@
+body {
+	margin: 0;
+	padding: 20px;
+	font-family: 'Helvetica', sans-serif;
+}
+nav {
+	width: 200px;
+	position: fixed;
+	top: 100px;
+	transition: all 0.5s ease;
+}
+
+h1, h2 {
+	
+}
+
+h1 {
+	top: 0;
+	margin-top: -22px;
+	padding-top: 22px;
+}
+h2 {
+	top: 50px;
+}
+
+h3 {
+	font-size: 24px;
+	color: red;
+	font-family: "Times", serif;
+	text-transform: uppercase;
+	transition: all .15s ease;
+}
+
+h3:hover {
+	letter-spacing: 6px;
+	transform: skewX(-20deg)
+
+}
+
+.header {
+	position: fixed;
+	width: 100%;
+	padding: 0;
+	margin-top: 0;
+	z-index: 20;
+	margin: 0;
+	transition: all .5s ease;
+}
+
+.arrow {
+	position: absolute;
+	right: 10px;
+	top: 42px;
+	transition: all .5s ease;
+}
+
+.flip {
+	transition: transform .25s ease;
+	transform: rotate3d(0,1,0,180deg);
+	background: white;
+	position: relative;
+}
+.header .flip {
+	margin: -22px 22px -22px 0;
+}
+
+.content {
+	margin-left: 200px;
+	transition: all .5s ease;
+}
+.content > div {
+	padding-top: 100px;
+	transition: all .5 ease;
+}
+
+.content > div > div:hover > div,
+.content > div > div:hover > div,
+.header:hover > div  {
+	transform: rotate3d(0,1,0,0);
+}
+
+ul {
+	padding: 0;
+}
+
+ul li {
+	list-style: none;
+	margin-top: 6px;
+	display: block;
+}
+li a {
+	color: #f00;
+	padding: 4px 0;
+	text-decoration: none;
+	border-bottom: 2px solid blue;
+	display: inline-block;
+	transition: padding .2s ease-in-out;
+}
+li a:hover {
+	color: blue;
+	padding: 10px 10px 10px 0;
+	font-size: 24px;
+	border-width: 4px;
+	font-weight: 600;
+}
+
+#contact a {
+	color: #f00;
+	padding: 4px 0;
+	text-decoration: none;
+	border-bottom: 2px solid blue;
+	display: inline-block;
+	transition: padding .2s ease-in-out;
+}
+img {
+	width: 100%;
+}
+
+#posters > div {
+	float: left;
+	width: 47.5%;
+	margin-right: 5%;
+}
+
+#posters > div:last-child {
+	margin-right: 0;
+}
+#posters:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+#about p {
+	font-family: "Times", serif;
+	font-size: 28px;
+	text-align: center;
+	font-style: italic;
+}
+
+#about > div {
+	float: left;
+	margin-left: 5%;
+}
+#about .pic {
+	width: 27.5%;
+	margin-left: 0;
+}
+#about .description {
+	width: 67.5%;
+}
+#about .description p {
+	text-align: left;
+	margin-top: 0;
+	line-height: 1.7;
+}
+
+@media all and (max-width: 640px) {
+	nav {
+		width: 100%;
+		position: relative;
+	}	
+}
+#contact {
+	clear: both;
+}
+
+@media all and (max-width: 640px) {
+	nav {
+		width: 100%;
+		position: relative;
+		top: auto;
+	}	
+	nav ul {
+		text-align: center
+	}
+	nav ul li {
+		display: inline-block
+	}
+
+	.content {
+		margin-left: 0
+	}
+	.content > div {
+		padding-top: 20px
+	}
+	.header {
+		position: relative
+	}
+	.header .flip {
+		margin: auto
+	}
+	#posters > div {
+		width: 100%;
+		margin-left 0;
+	}
+
+	#about .pic,
+	#about .description {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+	}
+	#about .description p {
+		font-size: 18px
+	}
+
+
+
+}
