@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8">
+
+	<title>Carrilho's manifesto</title>
+	<link href="https://fonts.googleapis.com/css?family=Eczar|Pragati+Narrow:400,700" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="main-content">
+		<div class="flag"></div>
+		<h1><span>André Carrilho</span> portraying crisis</h1>
+		<ul class="filters">
+			<li class="all"><a href="#" id="">All</a></li>
+			<li class="portugal"><a href="#" id="">Portugal</a></li>
+			<li class="spain"><a href="#" id="">Spain</a></li>
+			<li class="italy"><a href="#" id="">Italy</a></li>
+			<li class="greece"><a href="#" id="">Greece</a></li>
+			<li class="france"><a href="#" id="">France</a></li>
+			<li class="germany"><a href="#" id="">Germany</a></li>
+			<li class="ireland"><a href="#" id="">Ireland</a></li>
+		</ul>
+		
+		
+		
+
+		<div class="listing">
+
+			<ul class="gallery">
+				<script id="gallery-items" type="x-handlebars-template">​
+				{{#each this}}
+				<li data-index="{{@index}}" data-countries={{countries}}>
+							<img src="{{thumbnail}}" alt="{{title}}" />
+							<h2>{{title}}</h2>
+						</li>
+					{{/each}}
+					<li class="break"></li>
+				</script> 
+			</ul>
+
+		</div>
+
+	
+		
+		<div class="cartoon">
+			<div class="overlay"></div>
+			<div class="main">
+				<h3></h3>
+				<img src=""/>
+				<p></p>
+				<span class="close">×</span>
+			</div>
+
+		</div>
+
+	</div>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+	<script src="js/scripts.js"></script>
+
+</body>
+</html>

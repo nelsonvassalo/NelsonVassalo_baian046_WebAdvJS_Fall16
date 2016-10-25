@@ -1,0 +1,169 @@
+body {
+	background: #00509c;
+	font-family: 'Eczar';
+	font-size: 24px;
+	margin: 0;
+	color: #fff
+}
+* {
+	box-sizing: border-box;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+ul {
+	list-style: none;
+	text-indent: none;
+	padding: 0;
+	margin: 0
+	
+}
+
+.filters {
+	display: block;
+	text-align: center;
+	width: 100%;
+	margin-bottom: 40px
+
+}
+
+.filters li {
+	display: inline-block;
+	font-weight: 700;
+}
+
+.filters a {
+	color: black;
+	border-bottom: 3px solid black;
+	text-decoration: none;
+	font-family: 'Pragati Narrow', sans-serif;
+	text-transform: uppercase;
+
+}
+h1, h2, h3 {
+	font-family: 'Pragati Narrow', sans-serif;
+	text-transform: uppercase;
+	margin: 0;
+	padding: 20px
+}
+
+h1 {
+	font-size: 54px;
+	text-align: center;
+	color: #fff
+}
+h1 span {
+	font-weight: 400
+}
+
+h2 {}
+
+.flag {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: url(../images/stars.svg) no-repeat center / 30%;
+	pointer-events: none;
+	z-index: 100
+}
+
+.countries {
+	display: block;
+	width: 100%;
+}
+
+.gallery li {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+
+
+}
+.gallery:after {
+	content: "";
+	clear:both;
+	display: table
+}
+
+.gallery li h2 {
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	color: #fff;
+	background: rgba(9, 27, 249, 0.69);
+	position:absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: all .25s ease-in;
+	display: flex;
+	content-align: middle;
+}
+li.break {
+	display: table;
+	clear: both;
+	float: none
+}
+.gallery li:hover h2 {
+	opacity: 1;
+}
+.gallery li:nth-child(2n+0):after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+
+@media (min-width: 640px) {
+	.gallery li {
+		width: 50%;
+		float: left;
+	}
+	
+}
+
+@media (max-width: 640px) {
+	h1 {
+		font-size: 28px
+	}
+}
+
+.cartoon {
+	transform: translateX(-100%);
+	transition: all 0.25s ease-in;
+    z-index: 103;
+    width: 100vw;
+    height: 660%;
+    position: absolute;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #00509c;
+    top: 0;
+    left: 0;
+
+}
+
+.cartoon.visible {
+	transform: translateX(0);
+}
+
+.close {
+	width: 30px;
+	height: 30px;
+	display: block;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	font-size: 30px;
+	cursor: pointer
+}
+
+
+
+
+
